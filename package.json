@@ -1,12 +1,12 @@
 {
-  "name": "portfolio",
+  "name": "the-hotel-kyiv",
   "type": "module",
   "version": "1.0.3",
-  "homepage": "https://github.com/ChiragChrg/portfolio",
+  "homepage": "https://thehotelkyiv.com",
   "author": {
-    "name": "ChiragChrg",
-    "email": "chiruchirag2001@gmail.com",
-    "url": "https://chiragchrg.netlify.app/"
+    "name": "The Hotel Kyiv",
+    "email": "hello@thehotelkyiv.com",
+    "url": "https://thehotelkyiv.com"
   },
   "scripts": {
     "dev": "astro dev --host",

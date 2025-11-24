@@ -12,21 +12,28 @@ const ContactForm = () => {
 
     const NameRef = useRef<HTMLInputElement>(null)
     const EmailRef = useRef<HTMLInputElement>(null)
+    const CheckInRef = useRef<HTMLInputElement>(null)
+    const CheckOutRef = useRef<HTMLInputElement>(null)
+    const GuestsRef = useRef<HTMLSelectElement>(null)
     const MessageRef = useRef<HTMLTextAreaElement>(null)
 
     const HandleFormSubmit = async (e: SubmitEvent) => {
         e.preventDefault();
 
-        if (!NameRef.current || !EmailRef.current || !MessageRef.current) return
+        if (!NameRef.current || !EmailRef.current || !MessageRef.current || !CheckInRef.current || !CheckOutRef.current || !GuestsRef.current) return
 
         const name = NameRef?.current?.value as string;
         const email = EmailRef?.current?.value as string;
+        const checkIn = CheckInRef?.current?.value as string;
+        const checkOut = CheckOutRef?.current?.value as string;
+        const guests = GuestsRef?.current?.value as string;
         const message = MessageRef?.current?.value as string;
+        const composedMessage = `Check-in: ${checkIn || "TBD"}\nCheck-out: ${checkOut || "TBD"}\nGuests: ${guests}\n\n${message}`;
 
         const templateParams = {
             from_name: name,
             from_email: email,
-            message: message,
+            message: composedMessage,
         }
 
         try {
@@ -54,6 +61,9 @@ const ContactForm = () => {
             NameRef.current.value = ""
             EmailRef.current.value = ""
             MessageRef.current.value = ""
+            if (CheckInRef.current) CheckInRef.current.value = ""
+            if (CheckOutRef.current) CheckOutRef.current.value = ""
+            if (GuestsRef.current) GuestsRef.current.value = "2 Adults"
         } catch (error: { message: string } | any) {
             setMailStatus({ status: false, message: error.message })
         } finally {
@@ -96,15 +106,59 @@ const ContactForm = () => {
                     ref={EmailRef} />
             </label>
             <label
+                htmlFor="checkin"
+                className="noCustomCursor w-full h-fit flex justify-center items-start flex-col px-1 py-2"
+            >
+                Check-in
+                <input
+                    type="date"
+                    id="checkin"
+                    name="checkin"
+                    className="w-full p-2 mt-1 rounded-md border-none outline-none bg-background text-foreground"
+                    ref={CheckInRef}
+                />
+            </label>
+            <label
+                htmlFor="checkout"
+                className="noCustomCursor w-full h-fit flex justify-center items-start flex-col px-1 py-2"
+            >
+                Check-out
+                <input
+                    type="date"
+                    id="checkout"
+                    name="checkout"
+                    className="w-full p-2 mt-1 rounded-md border-none outline-none bg-background text-foreground"
+                    ref={CheckOutRef}
+                />
+            </label>
+            <label
+                htmlFor="guests"
+                className="noCustomCursor w-full h-fit flex justify-center items-start flex-col px-1 py-2"
+            >
+                Guests
+                <select
+                    id="guests"
+                    name="guests"
+                    className="w-full p-2 mt-1 rounded-md border-none outline-none bg-background text-foreground"
+                    ref={GuestsRef}
+                    defaultValue="2 Adults"
+                >
+                    <option>1 Adult</option>
+                    <option>2 Adults</option>
+                    <option>Family Suite (3-4)</option>
+                    <option>Residence (5+)</option>
+                </select>
+            </label>
+            <label
                 htmlFor="message"
                 className="noCustomCursor w-full h-fit flex justify-center items-start flex-col px-1 py-2"
             >
-                Message
+                Occasion & requests
                 <textarea
                     rows={5}
                     id="message"
                     name="message"
-                    placeholder="Enter your Message"
+                    placeholder="Let us know about celebrations, dietary notes, arrival preferences..."
                     className="w-full p-2 mt-1 rounded-md border-none outline-none bg-background text-foreground resize-none"
                     ref={MessageRef} />
             </label>

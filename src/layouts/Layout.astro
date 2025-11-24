@@ -12,7 +12,7 @@ import { Footer } from "../components";
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="theme-color" content="#000" />
+		<meta name="theme-color" content="#040608" />
 		<meta name="robots" content="index, follow" />
 		<meta
 			name="google-site-verification"
@@ -20,10 +20,10 @@ import { Footer } from "../components";
 		/>
 		<meta
 			name="keywords"
-			content="chiragchrg,chrgchirag, chirag, chrg, @ChrgChirag, portfolio, vortexa, ARMS, ARMS2.0, ARMS v3, Academic, Resource, Management, System, xrecon, @ChrgChirag, chiruchirag2001, chiragchrg.netlify.app, Fullstack Web Developer, My Personal Portfolio, ChiragChrg.github.io, I create Exciting Stuff on the Internet., epitome, aimit, epitome2k24,Epitome 2k24, Oriv.io, Oriv"
+			content="The Hotel Kyiv, luxury hotel Kyiv, five-star suites, rooftop bar Kyiv, spa Kyiv, Ukrainian hospitality"
 		/>
-		<meta name="author" content="ChiragChrg" />
-		<meta name="publisher" content="ChiragChrg" />
+		<meta name="author" content="The Hotel Kyiv" />
+		<meta name="publisher" content="The Hotel Kyiv" />
 		<link rel="manifest" href="/manifest.json" />
 
 		<!-- Preload CSS Styles -->
@@ -32,25 +32,25 @@ import { Footer } from "../components";
 		<link rel="preload stylesheet" href="/styles/cursor.css" as="style" />
 
 		<SEO
-			title="ChiragChrg | My Personal Portfolio | Fullstack Web Developer"
-			description="Welcome to your gateway to the dynamic world of web development. Dive into a digital realm where my coding and design expertise creates exceptional UI/UX."
-			canonical="https://chiragchrg.netlify.app/"
+			title="The Hotel Kyiv | Five-Star Luxury Above the Dnipro"
+			description="Discover luminous suites, Michelin-caliber dining, and holistic wellness rituals at The Hotel Kyiv, a five-star destination above the Dnipro."
+			canonical="https://thehotelkyiv.com/"
 			openGraph={{
 				basic: {
-					title: "ChiragChrg | My Personal Portfolio | Fullstack Web Developer",
+					title: "The Hotel Kyiv | Five-Star Luxury Above the Dnipro",
 					type: "website",
-					image: "https://raw.githubusercontent.com/ChiragChrg/ChiragChrg.github.io/main/Avatar.webp",
-					url: "https://chiragchrg.netlify.app/",
+					image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80",
+					url: "https://thehotelkyiv.com/",
 				},
 			}}
 			twitter={{
-				title: "ChiragChrg | My Personal Portfolio | Fullstack Web Developer",
+				title: "The Hotel Kyiv | Five-Star Luxury Above the Dnipro",
 				description:
-					"Welcome to your gateway to the dynamic world of web development. Dive into a digital realm where my coding and design expertise creates exceptional UI/UX.",
+					"Discover luminous suites, Michelin-caliber dining, and holistic wellness rituals in the heart of Ukraine.",
 				card: "summary",
-				site: "@ChrgChirag",
-				creator: "@ChrgChirag",
-				image: "https://raw.githubusercontent.com/ChiragChrg/ChiragChrg.github.io/main/Avatar.webp",
+				site: "@TheHotelKyiv",
+				creator: "@TheHotelKyiv",
+				image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80",
 			}}
 			extend={{
 				link: [
@@ -69,7 +69,7 @@ import { Footer } from "../components";
 				meta: [
 					{
 						name: "twitter:url",
-						content: "https://chiragchrg.netlify.app/",
+						content: "https://thehotelkyiv.com/",
 					},
 				],
 			}}
@@ -139,45 +139,39 @@ import { Footer } from "../components";
 
 		<style is:global>
 			:root {
-				--base: #000000;
-				--baseLite: rgba(0, 0, 0, 0.85);
-				--text: #fff;
+				--base: #040608;
+				--baseLite: rgba(4, 6, 8, 0.9);
+				--text: #f7f4ee;
 
-				--pH: 264;
-				--pS: 100%;
-				--pL: 50%;
+				--pH: 38;
+				--pS: 65%;
+				--pL: 62%;
 
-				--sH: 315;
-				--sS: 100%;
-				--sL: 50%;
+				--sH: 210;
+				--sS: 30%;
+				--sL: 32%;
 
-				--mH: 275;
-				--mS: 100%;
-				--mL: 47%;
-
-				/* --primary: 264, 100%, 50%;
-				--secondary: 315, 100%, 50%;
-				--mixColor: 275, 100%, 47%; */
+				--mH: 26;
+				--mS: 70%;
+				--mL: 52%;
 
 				--primary: var(--pH), var(--pS), var(--pL);
 				--secondary: var(--sH), var(--sS), var(--sL);
 				--mixColor: var(--mH), var(--mS), var(--mL);
 
-				--primaryLite: hsla(var(--primary), 0.6);
-				--primaryLiteAlt: hsla(var(--primary), 0.3);
+				--primaryLite: hsla(var(--primary), 0.7);
+				--primaryLiteAlt: hsla(var(--primary), 0.35);
 				--secondaryLite: hsla(var(--secondary), 0.6);
-				--secondaryLiteAlt: hsla(var(--secondary), 0.3);
+				--secondaryLiteAlt: hsla(var(--secondary), 0.35);
 
-				--footer: hsl(264, 100%, 15%);
-				--footerSvgA: hsl(259, 75%, 10%);
-				--footerSvgB: hsl(256, 60%, 5%);
+				--footer: #050910;
+				--footerSvgA: #070c12;
+				--footerSvgB: #0a1119;
 
 				--gradient: linear-gradient(
-					to right,
+					110deg,
 					hsl(var(--secondary)),
-					hsl(var(--primary)),
-					hsl(var(--primary)),
-					hsl(var(--secondary))
+					hsl(var(--primary))
 				);
 				--gradientLite: linear-gradient(
 					45deg,
@@ -187,46 +181,45 @@ import { Footer } from "../components";
 
 				--headerGradient: linear-gradient(
 					180deg,
-					rgba(0, 0, 0, 0.6),
+					rgba(4, 6, 8, 0.9),
 					transparent
 				);
 				--cardGradient: linear-gradient(
 					45deg,
-					hsl(0, 0%, 1%),
-					var(--primaryLite)
+					hsla(210, 40%, 8%, 0.9),
+					var(--primaryLiteAlt)
 				);
 				--cardGradientAlt: linear-gradient(
 					-135deg,
-					hsl(0, 0%, 5%),
-					var(--primaryLiteAlt)
+					hsla(210, 25%, 12%, 0.9),
+					var(--primaryLite)
 				);
 				--miscCardGradient: linear-gradient(
 					-45deg,
-					hsl(0, 0%, 1%),
+					hsla(210, 35%, 8%, 0.8),
 					var(--primaryLiteAlt)
 				);
 				--overlayGradient: radial-gradient(
 					farthest-corner at 100% 0%,
-					hsla(0, 0%, 5%, 0.5),
+					hsla(210, 40%, 8%, 0.6),
 					transparent
 				);
 				--LinkBtnGradient: linear-gradient(
 					-135deg,
-					hsla(0, 0%, 9%, 0.8),
-					hsla(0, 0%, 10%, 0.6)
+					hsla(var(--secondary), 0.5),
+					hsla(var(--primary), 0.4)
 				);
 				--SkillGradient: linear-gradient(
 					-135deg,
-					hsla(276, 50%, 10%, 0.8),
-					hsla(296, 50%, 10%, 0.5)
+					hsla(210, 20%, 15%, 0.85),
+					hsla(var(--primary), 0.25)
 				);
 				--SkillGradientAlt: linear-gradient(
 					-135deg,
-					hsla(276, 50%, 10%, 0.4),
-					hsla(296, 50%, 10%, 0.25)
+					hsla(var(--primary), 0.3),
+					hsla(var(--secondary), 0.35)
 				);
 				--orbitGradient: conic-gradient(
-					transparent,
 					transparent,
 					hsl(var(--primary)),
 					hsl(var(--secondary)),
@@ -240,67 +233,49 @@ import { Footer } from "../components";
 					transparent
 				);
 
-				--orbitDotColor: #fff;
-				--heroSocialColoe: #fff;
+				--orbitDotColor: #f7f4ee;
+				--heroSocialColor: #f7f4ee;
 				--contactSocialColor: hsla(0, 0%, 100%, 0.4);
 
-				--cursorColor: hsla(0, 0%, 100%, 0.6);
-				--cursorColorAlt: hsla(0, 0%, 100%, 0.8);
-				--dotColor: #fff;
+				--cursorColor: hsla(var(--primary), 0.6);
+				--cursorColorAlt: hsla(var(--primary), 0.8);
+				--dotColor: #f7f4ee;
 			}
 
 			html.light {
-				--base: #fff;
-				--baseLite: rgba(255, 255, 255, 0.85);
-				--text: #000;
+				--base: #faf7f0;
+				--baseLite: rgba(250, 247, 240, 0.9);
+				--text: #1a1c1f;
 
-				--pH: 264;
-				--pS: 100%;
-				--pL: 50%;
+				--pH: 38;
+				--pS: 65%;
+				--pL: 45%;
 
-				--sH: 315;
-				--sS: 100%;
-				--sL: 50%;
+				--sH: 210;
+				--sS: 35%;
+				--sL: 32%;
 
-				--mH: 275;
-				--mS: 100%;
-				--mL: 47%;
-
-				/* --pH: 240;
-				--pS: 60%;
-				--pL: 35%;
-
-				--sH: 190;
-				--sS: 80%;
-				--sL: 50%;
-
-				--mH: 200;
-				--mS: 80%;
-				--mL: 60%; */
-
-				/* --primary: 264, 100%, 50%;
-				--secondary: 315, 100%, 50%;
-				--mixColor: 275, 100%, 47%; */
+				--mH: 26;
+				--mS: 60%;
+				--mL: 40%;
 
 				--primary: var(--pH), var(--pS), var(--pL);
 				--secondary: var(--sH), var(--sS), var(--sL);
 				--mixColor: var(--mH), var(--mS), var(--mL);
 
-				--primaryLite: hsla(var(--primary), 0.6);
-				--primaryLiteAlt: hsla(var(--primary), 0.3);
-				--secondaryLite: hsla(var(--secondary), 0.6);
-				--secondaryLiteAlt: hsla(var(--secondary), 0.3);
+				--primaryLite: hsla(var(--primary), 0.5);
+				--primaryLiteAlt: hsla(var(--primary), 0.25);
+				--secondaryLite: hsla(var(--secondary), 0.3);
+				--secondaryLiteAlt: hsla(var(--secondary), 0.2);
 
-				--footer: hsl(var(--pH), var(--pS), 75%);
-				--footerSvgA: hsl(var(--pH), var(--pS), 85%);
-				--footerSvgB: hsl(var(--pH), var(--pS), 90%);
+				--footer: hsl(var(--primary), 0.25);
+				--footerSvgA: hsl(var(--primary), 0.3);
+				--footerSvgB: hsl(var(--primary), 0.4);
 
 				--gradient: linear-gradient(
 					to right,
 					hsl(var(--secondary)),
-					hsl(var(--primary)),
-					hsl(var(--primary)),
-					hsl(var(--secondary))
+					hsl(var(--primary))
 				);
 				--gradientLite: linear-gradient(
 					45deg,
@@ -310,12 +285,12 @@ import { Footer } from "../components";
 
 				--headerGradient: linear-gradient(
 					180deg,
-					rgba(255, 255, 255, 0.6),
+					rgba(250, 247, 240, 0.9),
 					transparent
 				);
 				--cardGradient: linear-gradient(
 					45deg,
-					hsl(var(--secondary), 0.1),
+					hsla(var(--secondary), 0.08),
 					var(--primaryLiteAlt)
 				);
 				--cardGradientAlt: linear-gradient(
@@ -330,7 +305,7 @@ import { Footer } from "../components";
 				);
 				--overlayGradient: radial-gradient(
 					farthest-corner at 100% 0%,
-					hsla(0, 0%, 100%, 0.5),
+					hsla(0, 0%, 100%, 0.4),
 					transparent
 				);
 				--LinkBtnGradient: linear-gradient(
@@ -341,7 +316,7 @@ import { Footer } from "../components";
 				--SkillGradient: linear-gradient(
 					-135deg,
 					hsla(var(--mixColor), 0.125),
-					hsla(var(--primary), 0.25)
+					hsla(var(--primary), 0.15)
 				);
 				--SkillGradientAlt: linear-gradient(
 					-135deg,
@@ -349,7 +324,6 @@ import { Footer } from "../components";
 					hsla(var(--secondary), 0.15)
 				);
 				--orbitGradient: conic-gradient(
-					transparent,
 					transparent,
 					hsl(var(--secondary)),
 					hsl(var(--primary))
@@ -361,13 +335,13 @@ import { Footer } from "../components";
 					transparent
 				);
 
-				--orbitDotColor: hsl(var(--mixColor));
-				--heroSocialColor: hsl(0, 0%, 20%);
-				--contactSocialColor: hsla(0, 0%, 20%, 0.4);
+				--orbitDotColor: hsl(var(--secondary));
+				--heroSocialColor: hsl(var(--secondary));
+				--contactSocialColor: hsla(var(--secondary), 0.4);
 
 				--cursorColor: hsla(var(--primary), 0.6);
 				--cursorColorAlt: hsla(var(--primary), 0.6);
-				--dotColor: hsl(var(--mixColor));
+				--dotColor: hsl(var(--secondary));
 			}
 
 			* {

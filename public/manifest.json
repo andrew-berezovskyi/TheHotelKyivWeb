@@ -1,6 +1,6 @@
 {
-    "short_name": "ChiragChrg",
-    "name": "ChiragChrg | Portfolio",
+    "short_name": "Hotel Kyiv",
+    "name": "The Hotel Kyiv",
     "icons": [
         {
             "src": "./Icons/144.png",
@@ -28,9 +28,9 @@
     "start_url": ".",
     "id": "/",
     "display": "standalone",
-    "theme_color": "#000",
-    "background_color": "#000",
-    "description": "Welcome to ChiragChrg's portfolio website, your gateway to the dynamic world of full stack web development. Immerse yourself in the digital realm where my expertise in coding and design converges to create extraordinary online experiences.",
+    "theme_color": "#040608",
+    "background_color": "#040608",
+    "description": "Five-star suites, rooftop dining, and holistic spa rituals at The Hotel Kyiv, a luxury sanctuary overlooking the Dnipro River.",
     "dir": "ltr",
     "lang": "en",
     "orientation": "portrait",
@@ -40,9 +40,8 @@
         "window-controls-overlay"
     ],
     "categories": [
-        "productivity",
-        "education",
-        "social"
+        "travel",
+        "hospitality"
     ],
     "prefer_related_applications": false
 }
